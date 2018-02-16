@@ -3,7 +3,7 @@ using System.Linq;
 
 namespace LT.RandomGen
 {
-    public static class RandomGen
+    public static class RandomGenerator
     {
         private static Random random = new Random();
         /// <summary>
