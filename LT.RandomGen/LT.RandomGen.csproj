@@ -8,6 +8,7 @@
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <Version>1.0.1</Version>
     <PackageLicenseUrl>https://choosealicense.com/licenses/mit/</PackageLicenseUrl>
+    <PackageProjectUrl>https://github.com/lonemario/LT.RandomGen</PackageProjectUrl>
   </PropertyGroup>
 
 </Project>
