@@ -1,4 +1,5 @@
-﻿using System;
+﻿using LT.RandomGen.Data;
+using System;
 using System.Linq;
 
 namespace LT.RandomGen
@@ -190,6 +191,11 @@ namespace LT.RandomGen
                 }
 
             }
+        }
+
+        public static string GenerateText(int WordsNumber, Kinds Kind, Languages Language = Languages.English)
+        {
+            return "";
         }
     }
 }
