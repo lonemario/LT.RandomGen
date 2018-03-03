@@ -4,7 +4,7 @@ namespace LT.RandomGen.Data.Foods
 {
     internal static class CsFoods
     {
-        public static List<string> GetUncountables()
+        public static List<string> GetFoods()
         {
             return new List<string> {
                 "kuskus",

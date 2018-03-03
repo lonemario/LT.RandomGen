@@ -1,5 +1,8 @@
 ﻿using LT.RandomGen.Data;
+using LT.RandomGen.Data.Animals;
+using LT.RandomGen.Data.Foods;
 using System;
+using System.Collections.Generic;
 using System.Linq;
 
 namespace LT.RandomGen
@@ -7,6 +10,306 @@ namespace LT.RandomGen
     public static class RandomGenerator
     {
         private static Random random = new Random();
+
+        /// <summary>
+        /// Get the list of words by kind and Language
+        /// </summary>
+        /// <param name="Kind"></param>
+        /// <param name="Language"></param>
+        /// <returns></returns>
+        internal static List<string> GetWords(Kinds Kind, Languages Language)
+        {
+            switch (Language)
+            {
+                case Languages.English:
+                    switch (Kind)
+                    {
+                        case Kinds.Animals:
+                            return EnAnimals.GetAnimals();
+                            break;
+                        case Kinds.Foods:
+                            return EnFoods.GetFoods();
+                            break;
+                        default:
+                            throw new NotImplementedException();
+                            break;
+                    }
+                    break;
+                case Languages.Croatian:
+                    switch (Kind)
+                    {
+                        case Kinds.Animals:
+                            return HrAnimals.GetAnimals();
+                            break;
+                        case Kinds.Foods:
+                            return HrFoods.GetFoods();
+                            break;
+                        default:
+                            throw new NotImplementedException();
+                            break;
+                    }
+                    break;
+                case Languages.Czech:
+                    switch (Kind)
+                    {
+                        case Kinds.Animals:
+                            return CsAnimals.GetAnimals();
+                            break;
+                        case Kinds.Foods:
+                            return CsFoods.GetFoods();
+                            break;
+                        default:
+                            throw new NotImplementedException();
+                            break;
+                    }
+                    break;
+                case Languages.Danish:
+                    switch (Kind)
+                    {
+                        case Kinds.Animals:
+                            return DaAnimals.GetAnimals();
+                            break;
+                        case Kinds.Foods:
+                            return DaFoods.GetFoods();
+                            break;
+                        default:
+                            throw new NotImplementedException();
+                            break;
+                    }
+                    break;
+                case Languages.Dutch:
+                    switch (Kind)
+                    {
+                        case Kinds.Animals:
+                            return NlAnimals.GetAnimals();
+                            break;
+                        case Kinds.Foods:
+                            return NlFoods.GetFoods();
+                            break;
+                        default:
+                            throw new NotImplementedException();
+                            break;
+                    }
+                    break;
+                case Languages.Estonian:
+                    switch (Kind)
+                    {
+                        case Kinds.Animals:
+                            return EtAnimals.GetAnimals();
+                            break;
+                        case Kinds.Foods:
+                            return EtFoods.GetFoods();
+                            break;
+                        default:
+                            throw new NotImplementedException();
+                            break;
+                    }
+                    break;
+                case Languages.Finnish:
+                    switch (Kind)
+                    {
+                        case Kinds.Animals:
+                            return FiAnimals.GetAnimals();
+                            break;
+                        case Kinds.Foods:
+                            return FiFoods.GetFoods();
+                            break;
+                        default:
+                            throw new NotImplementedException();
+                            break;
+                    }
+                    break;
+                case Languages.French:
+                    switch (Kind)
+                    {
+                        case Kinds.Animals:
+                            return FrAnimals.GetAnimals();
+                            break;
+                        case Kinds.Foods:
+                            return FrFoods.GetFoods();
+                            break;
+                        default:
+                            throw new NotImplementedException();
+                            break;
+                    }
+                    break;
+                case Languages.German:
+                    switch (Kind)
+                    {
+                        case Kinds.Animals:
+                            return DeAnimals.GetAnimals();
+                            break;
+                        case Kinds.Foods:
+                            return DeFoods.GetFoods();
+                            break;
+                        default:
+                            throw new NotImplementedException();
+                            break;
+                    }
+                    break;
+                case Languages.Hungarian:
+                    switch (Kind)
+                    {
+                        case Kinds.Animals:
+                            return HuAnimals.GetAnimals();
+                            break;
+                        case Kinds.Foods:
+                            return HuFoods.GetFoods();
+                            break;
+                        default:
+                            throw new NotImplementedException();
+                            break;
+                    }
+                    break;
+                case Languages.Irish:
+                    switch (Kind)
+                    {
+                        case Kinds.Animals:
+                            return GaAnimals.GetAnimals();
+                            break;
+                        case Kinds.Foods:
+                            return GaFoods.GetFoods();
+                            break;
+                        default:
+                            throw new NotImplementedException();
+                            break;
+                    }
+                    break;
+                case Languages.Italian:
+                    switch (Kind)
+                    {
+                        case Kinds.Animals:
+                            return ItAnimals.GetAnimals();
+                            break;
+                        case Kinds.Foods:
+                            return ItFoods.GetFoods();
+                            break;
+                        default:
+                            throw new NotImplementedException();
+                            break;
+                    }
+                    break;
+                case Languages.Latin:
+                    switch (Kind)
+                    {
+                        case Kinds.Animals:
+                            return LaAnimals.GetAnimals();
+                            break;
+                        case Kinds.Foods:
+                            return LaFoods.GetFoods();
+                            break;
+                        default:
+                            throw new NotImplementedException();
+                            break;
+                    }
+                    break;
+                case Languages.Polish:
+                    switch (Kind)
+                    {
+                        case Kinds.Animals:
+                            return PlAnimals.GetAnimals();
+                            break;
+                        case Kinds.Foods:
+                            return PlFoods.GetFoods();
+                            break;
+                        default:
+                            throw new NotImplementedException();
+                            break;
+                    }
+                    break;
+                case Languages.Portuguese:
+                    switch (Kind)
+                    {
+                        case Kinds.Animals:
+                            return PtAnimals.GetAnimals();
+                            break;
+                        case Kinds.Foods:
+                            return PtFoods.GetFoods();
+                            break;
+                        default:
+                            throw new NotImplementedException();
+                            break;
+                    }
+                    break;
+                case Languages.Slovak:
+                    switch (Kind)
+                    {
+                        case Kinds.Animals:
+                            return SkAnimals.GetAnimals();
+                            break;
+                        case Kinds.Foods:
+                            return SkFoods.GetFoods();
+                            break;
+                        default:
+                            throw new NotImplementedException();
+                            break;
+                    }
+                    break;
+                case Languages.Slovene:
+                    switch (Kind)
+                    {
+                        case Kinds.Animals:
+                            return SlAnimals.GetAnimals();
+                            break;
+                        case Kinds.Foods:
+                            return SlFoods.GetFoods();
+                            break;
+                        default:
+                            throw new NotImplementedException();
+                            break;
+                    }
+                    break;
+                case Languages.Spanish:
+                    switch (Kind)
+                    {
+                        case Kinds.Animals:
+                            return EsAnimals.GetAnimals();
+                            break;
+                        case Kinds.Foods:
+                            return EsFoods.GetFoods();
+                            break;
+                        default:
+                            throw new NotImplementedException();
+                            break;
+                    }
+                    break;
+                case Languages.Swedish:
+                    switch (Kind)
+                    {
+                        case Kinds.Animals:
+                            return SvAnimals.GetAnimals();
+                            break;
+                        case Kinds.Foods:
+                            return SvFoods.GetFoods();
+                            break;
+                        default:
+                            throw new NotImplementedException();
+                            break;
+                    }
+                    break;
+                default:
+                    throw new NotImplementedException();
+                    break;
+            }
+        }
+
+        /// <summary>
+        /// Return the separator caracter between blank, comma or dot
+        /// </summary>
+        /// <returns></returns>
+        internal static string GetSeparator()
+        {
+            var r = random.Next(0, 9);
+
+            if (r == 9)
+                return ". ";
+
+            if (r > 5)
+                return ", ";
+
+            return " ";
+        }
+
         /// <summary>
         /// Return a random string
         /// </summary>
@@ -193,9 +496,103 @@ namespace LT.RandomGen
             }
         }
 
-        public static string GenerateText(int WordsNumber, Kinds Kind, Languages Language = Languages.English)
+        /// <summary>
+        /// Return a text 
+        /// </summary>
+        /// <param name="Kind"></param>
+        /// <param name="WordsNumber"></param>
+        /// <param name="Language"></param>
+        /// <param name="UseSeparatorLogic"></param>
+        /// <returns></returns>
+        public static string GenerateText(Kinds Kind, int? WordsNumber = null, Languages Language = Languages.English,
+                                            bool UseSeparatorLogic = true )
         {
-            return "";
+            //Se il numero di parole è negativo torno vuoto
+            if (WordsNumber.HasValue)
+                if (WordsNumber.Value < 0)
+                    return "";
+
+            //Recupero le parole
+            var words = GetWords(Kind, Language);
+
+            //torno tutte le parole
+            if (WordsNumber == null)
+                if (UseSeparatorLogic)
+                {
+                    string resp = String.Empty;
+                    foreach (var word in words)
+                    {
+                        if (resp!=String.Empty)
+                        {
+                            resp = resp + GetSeparator() + word;
+                        }
+                        else
+                        {
+                            //primo passaggio, non metto il separatore
+                            resp = resp + word;
+                        }
+                    }
+                    return resp;
+                }
+                else
+                {
+                    return string.Join(" ", words.ToArray());
+                }
+
+            //Torno il numero di parole specificato
+            if (UseSeparatorLogic)
+            {
+                string resp = String.Empty;
+                for (int i = 0; i < WordsNumber; i++)
+                {
+                    if (resp != String.Empty)
+                    {
+                        resp = resp + GetSeparator() + words[random.Next(0,words.Count-1)];
+                    }
+                    else
+                    {
+                        //primo passaggio, non metto il separatore
+                        resp = resp + words[random.Next(0, words.Count - 1)];
+                    }
+                }
+                return resp;
+            }
+            else
+            {
+                string resp = String.Empty;
+                for (int i = 0; i < WordsNumber; i++)
+                {
+                    resp = resp + words[random.Next(0, words.Count - 1)] + " ";
+                }
+                return resp;
+            }
+
+        }
+
+        public static string GenerateParagraphs(Kinds Kind, int ParagraphsNumber, Languages Language = Languages.English)
+        {
+            //Se il numero di paragrafi è minore di 1 torno vuoto
+            if (ParagraphsNumber < 1)
+                return "";
+
+            int minWordsInParagraph = 70;
+            int maxWordsInParagraph = 110;
+
+            string resp = String.Empty;
+            for (int i = 0; i < ParagraphsNumber; i++)
+            {
+                if (resp != String.Empty)
+                {
+                    resp = resp + Environment.NewLine + Environment.NewLine + GenerateText(Kind, 
+                        random.Next(minWordsInParagraph, maxWordsInParagraph), Language);
+                }
+                else
+                {
+                    //primo passaggio, non metto il separatore
+                    resp = resp + GenerateText(Kind, random.Next(minWordsInParagraph, maxWordsInParagraph), Language);
+                }
+            }
+            return resp;
         }
     }
 }
