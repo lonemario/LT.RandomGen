@@ -21,7 +21,7 @@ var _string = RandomGenerator.GenericString(10);
 //for email
 var _email = RandomGenerator.GenericEmail();
 //for paragraphs (return 10 paragraphs of things type in italian)
-var _paragraphs = RandomGenerator.GenerateParagraphs(Data.Kinds.Things,10,Data.Languages.Italian)
+var _paragraphs = RandomGenerator.GenerateParagraphs(Data.Kinds.Things,10,Data.Languages.Italian);
 ...
 ```
 
