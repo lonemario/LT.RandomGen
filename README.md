@@ -3,25 +3,9 @@
 
 Library which helps to generate random text, datetime, int, email with many options.
 
-**_new features_**  Add functions for generate words and paragraphs in 19 languages (        English,
-        Croatian,
-        Czech,
-        Danish,
-        Dutch,
-        Estonian,
-        Finnish,
-        French,
-        German,
-        Hungarian,
-        Irish,
-        Italian,
-        Latin,
-        Polish,
-        Portuguese,
-        Slovak,
-        Slovene,
-        Spanish,
-        Swedish)
+**_new features_**  Add functions for generate words and paragraphs in 19 languages (English, 
+Croatian, Czech, Danish, Dutch, Estonian, Finnish, French, German, Hungarian, Irish, Italian,
+Latin, Polish, Portuguese, Slovak, Slovene, Spanish, Swedish)
 
 ## Prerequisites
 
