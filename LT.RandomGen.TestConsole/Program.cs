@@ -6,7 +6,7 @@ namespace LT.RandomGen.TestConsole
     {
         static void Main(string[] args)
         {
-            Console.WriteLine(RandomGenerator.GenerateParagraphs(Data.Kinds.Animals,5));
+            Console.WriteLine(RandomGenerator.GenerateParagraphs(Data.Kinds.Things,100,Data.Languages.Italian));
             Console.ReadKey();
         }
     }

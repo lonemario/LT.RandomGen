@@ -1,6 +1,11 @@
 ﻿using LT.RandomGen.Data;
+using LT.RandomGen.Data.Actions;
 using LT.RandomGen.Data.Animals;
 using LT.RandomGen.Data.Foods;
+using LT.RandomGen.Data.Jobs;
+using LT.RandomGen.Data.Things;
+using LT.RandomGen.Data.Tools;
+using LT.RandomGen.Utilities;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -24,11 +29,23 @@ namespace LT.RandomGen
                 case Languages.English:
                     switch (Kind)
                     {
+                        case Kinds.Actions:
+                            return EnActions.GetActions();
+                            break;
                         case Kinds.Animals:
                             return EnAnimals.GetAnimals();
                             break;
                         case Kinds.Foods:
                             return EnFoods.GetFoods();
+                            break;
+                        case Kinds.Jobs:
+                            return EnJobs.GetJobs();
+                            break;
+                        case Kinds.Things:
+                            return EnThings.GetThings();
+                            break;
+                        case Kinds.Tools:
+                            return EnTools.GetTools();
                             break;
                         default:
                             throw new NotImplementedException();
@@ -38,11 +55,23 @@ namespace LT.RandomGen
                 case Languages.Croatian:
                     switch (Kind)
                     {
+                        case Kinds.Actions:
+                            return HrActions.GetActions();
+                            break;
                         case Kinds.Animals:
                             return HrAnimals.GetAnimals();
                             break;
                         case Kinds.Foods:
                             return HrFoods.GetFoods();
+                            break;
+                        case Kinds.Jobs:
+                            return HrJobs.GetJobs();
+                            break;
+                        case Kinds.Things:
+                            return HrThings.GetThings();
+                            break;
+                        case Kinds.Tools:
+                            return HrTools.GetTools();
                             break;
                         default:
                             throw new NotImplementedException();
@@ -52,11 +81,23 @@ namespace LT.RandomGen
                 case Languages.Czech:
                     switch (Kind)
                     {
+                        case Kinds.Actions:
+                            return CsActions.GetActions();
+                            break;
                         case Kinds.Animals:
                             return CsAnimals.GetAnimals();
                             break;
                         case Kinds.Foods:
                             return CsFoods.GetFoods();
+                            break;
+                        case Kinds.Jobs:
+                            return CsJobs.GetJobs();
+                            break;
+                        case Kinds.Things:
+                            return CsThings.GetThings();
+                            break;
+                        case Kinds.Tools:
+                            return CsTools.GetTools();
                             break;
                         default:
                             throw new NotImplementedException();
@@ -66,11 +107,23 @@ namespace LT.RandomGen
                 case Languages.Danish:
                     switch (Kind)
                     {
+                        case Kinds.Actions:
+                            return DaActions.GetActions();
+                            break;
                         case Kinds.Animals:
                             return DaAnimals.GetAnimals();
                             break;
                         case Kinds.Foods:
                             return DaFoods.GetFoods();
+                            break;
+                        case Kinds.Jobs:
+                            return DaJobs.GetJobs();
+                            break;
+                        case Kinds.Things:
+                            return DaThings.GetThings();
+                            break;
+                        case Kinds.Tools:
+                            return DaTools.GetTools();
                             break;
                         default:
                             throw new NotImplementedException();
@@ -80,11 +133,23 @@ namespace LT.RandomGen
                 case Languages.Dutch:
                     switch (Kind)
                     {
+                        case Kinds.Actions:
+                            return NlActions.GetActions();
+                            break;
                         case Kinds.Animals:
                             return NlAnimals.GetAnimals();
                             break;
                         case Kinds.Foods:
                             return NlFoods.GetFoods();
+                            break;
+                        case Kinds.Jobs:
+                            return NlJobs.GetJobs();
+                            break;
+                        case Kinds.Things:
+                            return NlThings.GetThings();
+                            break;
+                        case Kinds.Tools:
+                            return NlTools.GetTools();
                             break;
                         default:
                             throw new NotImplementedException();
@@ -94,11 +159,23 @@ namespace LT.RandomGen
                 case Languages.Estonian:
                     switch (Kind)
                     {
+                        case Kinds.Actions:
+                            return EtActions.GetActions();
+                            break;
                         case Kinds.Animals:
                             return EtAnimals.GetAnimals();
                             break;
                         case Kinds.Foods:
                             return EtFoods.GetFoods();
+                            break;
+                        case Kinds.Jobs:
+                            return EtJobs.GetJobs();
+                            break;
+                        case Kinds.Things:
+                            return EtThings.GetThings();
+                            break;
+                        case Kinds.Tools:
+                            return EtTools.GetTools();
                             break;
                         default:
                             throw new NotImplementedException();
@@ -108,11 +185,23 @@ namespace LT.RandomGen
                 case Languages.Finnish:
                     switch (Kind)
                     {
+                        case Kinds.Actions:
+                            return FiActions.GetActions();
+                            break;
                         case Kinds.Animals:
                             return FiAnimals.GetAnimals();
                             break;
                         case Kinds.Foods:
                             return FiFoods.GetFoods();
+                            break;
+                        case Kinds.Jobs:
+                            return FiJobs.GetJobs();
+                            break;
+                        case Kinds.Things:
+                            return FiThings.GetThings();
+                            break;
+                        case Kinds.Tools:
+                            return FiTools.GetTools();
                             break;
                         default:
                             throw new NotImplementedException();
@@ -122,11 +211,23 @@ namespace LT.RandomGen
                 case Languages.French:
                     switch (Kind)
                     {
+                        case Kinds.Actions:
+                            return FrActions.GetActions();
+                            break;
                         case Kinds.Animals:
                             return FrAnimals.GetAnimals();
                             break;
                         case Kinds.Foods:
                             return FrFoods.GetFoods();
+                            break;
+                        case Kinds.Jobs:
+                            return FrJobs.GetJobs();
+                            break;
+                        case Kinds.Things:
+                            return FrThings.GetThings();
+                            break;
+                        case Kinds.Tools:
+                            return FrTools.GetTools();
                             break;
                         default:
                             throw new NotImplementedException();
@@ -136,11 +237,23 @@ namespace LT.RandomGen
                 case Languages.German:
                     switch (Kind)
                     {
+                        case Kinds.Actions:
+                            return DeActions.GetActions();
+                            break;
                         case Kinds.Animals:
                             return DeAnimals.GetAnimals();
                             break;
                         case Kinds.Foods:
                             return DeFoods.GetFoods();
+                            break;
+                        case Kinds.Jobs:
+                            return DeJobs.GetJobs();
+                            break;
+                        case Kinds.Things:
+                            return DeThings.GetThings();
+                            break;
+                        case Kinds.Tools:
+                            return DeTools.GetTools();
                             break;
                         default:
                             throw new NotImplementedException();
@@ -150,11 +263,23 @@ namespace LT.RandomGen
                 case Languages.Hungarian:
                     switch (Kind)
                     {
+                        case Kinds.Actions:
+                            return HuActions.GetActions();
+                            break;
                         case Kinds.Animals:
                             return HuAnimals.GetAnimals();
                             break;
                         case Kinds.Foods:
                             return HuFoods.GetFoods();
+                            break;
+                        case Kinds.Jobs:
+                            return HuJobs.GetJobs();
+                            break;
+                        case Kinds.Things:
+                            return HuThings.GetThings();
+                            break;
+                        case Kinds.Tools:
+                            return HuTools.GetTools();
                             break;
                         default:
                             throw new NotImplementedException();
@@ -164,11 +289,23 @@ namespace LT.RandomGen
                 case Languages.Irish:
                     switch (Kind)
                     {
+                        case Kinds.Actions:
+                            return GaActions.GetActions();
+                            break;
                         case Kinds.Animals:
                             return GaAnimals.GetAnimals();
                             break;
                         case Kinds.Foods:
                             return GaFoods.GetFoods();
+                            break;
+                        case Kinds.Jobs:
+                            return GaJobs.GetJobs();
+                            break;
+                        case Kinds.Things:
+                            return GaThings.GetThings();
+                            break;
+                        case Kinds.Tools:
+                            return GaTools.GetTools();
                             break;
                         default:
                             throw new NotImplementedException();
@@ -178,11 +315,23 @@ namespace LT.RandomGen
                 case Languages.Italian:
                     switch (Kind)
                     {
+                        case Kinds.Actions:
+                            return ItActions.GetActions();
+                            break;
                         case Kinds.Animals:
                             return ItAnimals.GetAnimals();
                             break;
                         case Kinds.Foods:
                             return ItFoods.GetFoods();
+                            break;
+                        case Kinds.Jobs:
+                            return ItJobs.GetJobs();
+                            break;
+                        case Kinds.Things:
+                            return ItThings.GetThings();
+                            break;
+                        case Kinds.Tools:
+                            return ItTools.GetTools();
                             break;
                         default:
                             throw new NotImplementedException();
@@ -192,11 +341,23 @@ namespace LT.RandomGen
                 case Languages.Latin:
                     switch (Kind)
                     {
+                        case Kinds.Actions:
+                            return LaActions.GetActions();
+                            break;
                         case Kinds.Animals:
                             return LaAnimals.GetAnimals();
                             break;
                         case Kinds.Foods:
                             return LaFoods.GetFoods();
+                            break;
+                        case Kinds.Jobs:
+                            return LaJobs.GetJobs();
+                            break;
+                        case Kinds.Things:
+                            return LaThings.GetThings();
+                            break;
+                        case Kinds.Tools:
+                            return LaTools.GetTools();
                             break;
                         default:
                             throw new NotImplementedException();
@@ -206,11 +367,23 @@ namespace LT.RandomGen
                 case Languages.Polish:
                     switch (Kind)
                     {
+                        case Kinds.Actions:
+                            return PlActions.GetActions();
+                            break;
                         case Kinds.Animals:
                             return PlAnimals.GetAnimals();
                             break;
                         case Kinds.Foods:
                             return PlFoods.GetFoods();
+                            break;
+                        case Kinds.Jobs:
+                            return PlJobs.GetJobs();
+                            break;
+                        case Kinds.Things:
+                            return PlThings.GetThings();
+                            break;
+                        case Kinds.Tools:
+                            return PlTools.GetTools();
                             break;
                         default:
                             throw new NotImplementedException();
@@ -220,11 +393,23 @@ namespace LT.RandomGen
                 case Languages.Portuguese:
                     switch (Kind)
                     {
+                        case Kinds.Actions:
+                            return PtActions.GetActions();
+                            break;
                         case Kinds.Animals:
                             return PtAnimals.GetAnimals();
                             break;
                         case Kinds.Foods:
                             return PtFoods.GetFoods();
+                            break;
+                        case Kinds.Jobs:
+                            return PtJobs.GetJobs();
+                            break;
+                        case Kinds.Things:
+                            return PtThings.GetThings();
+                            break;
+                        case Kinds.Tools:
+                            return PtTools.GetTools();
                             break;
                         default:
                             throw new NotImplementedException();
@@ -234,11 +419,23 @@ namespace LT.RandomGen
                 case Languages.Slovak:
                     switch (Kind)
                     {
+                        case Kinds.Actions:
+                            return SkActions.GetActions();
+                            break;
                         case Kinds.Animals:
                             return SkAnimals.GetAnimals();
                             break;
                         case Kinds.Foods:
                             return SkFoods.GetFoods();
+                            break;
+                        case Kinds.Jobs:
+                            return SkJobs.GetJobs();
+                            break;
+                        case Kinds.Things:
+                            return SkThings.GetThings();
+                            break;
+                        case Kinds.Tools:
+                            return SkTools.GetTools();
                             break;
                         default:
                             throw new NotImplementedException();
@@ -248,11 +445,23 @@ namespace LT.RandomGen
                 case Languages.Slovene:
                     switch (Kind)
                     {
+                        case Kinds.Actions:
+                            return SlActions.GetActions();
+                            break;
                         case Kinds.Animals:
                             return SlAnimals.GetAnimals();
                             break;
                         case Kinds.Foods:
                             return SlFoods.GetFoods();
+                            break;
+                        case Kinds.Jobs:
+                            return SlJobs.GetJobs();
+                            break;
+                        case Kinds.Things:
+                            return SlThings.GetThings();
+                            break;
+                        case Kinds.Tools:
+                            return SlTools.GetTools();
                             break;
                         default:
                             throw new NotImplementedException();
@@ -262,11 +471,23 @@ namespace LT.RandomGen
                 case Languages.Spanish:
                     switch (Kind)
                     {
+                        case Kinds.Actions:
+                            return EsActions.GetActions();
+                            break;
                         case Kinds.Animals:
                             return EsAnimals.GetAnimals();
                             break;
                         case Kinds.Foods:
                             return EsFoods.GetFoods();
+                            break;
+                        case Kinds.Jobs:
+                            return EsJobs.GetJobs();
+                            break;
+                        case Kinds.Things:
+                            return EsThings.GetThings();
+                            break;
+                        case Kinds.Tools:
+                            return EsTools.GetTools();
                             break;
                         default:
                             throw new NotImplementedException();
@@ -276,11 +497,23 @@ namespace LT.RandomGen
                 case Languages.Swedish:
                     switch (Kind)
                     {
+                        case Kinds.Actions:
+                            return SvActions.GetActions();
+                            break;
                         case Kinds.Animals:
                             return SvAnimals.GetAnimals();
                             break;
                         case Kinds.Foods:
                             return SvFoods.GetFoods();
+                            break;
+                        case Kinds.Jobs:
+                            return SvJobs.GetJobs();
+                            break;
+                        case Kinds.Things:
+                            return SvThings.GetThings();
+                            break;
+                        case Kinds.Tools:
+                            return SvTools.GetTools();
                             break;
                         default:
                             throw new NotImplementedException();
@@ -299,7 +532,7 @@ namespace LT.RandomGen
         /// <returns></returns>
         internal static string GetSeparator()
         {
-            var r = random.Next(0, 9);
+            var r = random.Next(0, 10);
 
             if (r == 9)
                 return ". ";
@@ -524,19 +757,28 @@ namespace LT.RandomGen
                     {
                         if (resp!=String.Empty)
                         {
-                            resp = resp + GetSeparator() + word;
+                            var separator = GetSeparator();
+
+                            if (separator.Contains("."))
+                            {
+                                resp = resp + separator + WordsHelper.FirstCharToUpper(word.ToLower());
+                            }
+                            else
+                            {
+                                resp = resp + separator + word.ToLower();
+                            }
                         }
                         else
                         {
                             //primo passaggio, non metto il separatore
-                            resp = resp + word;
+                            resp = resp + word.ToLower();
                         }
                     }
-                    return resp;
+                    return resp + ".";
                 }
                 else
                 {
-                    return string.Join(" ", words.ToArray());
+                    return string.Join(" ", words.ToArray()) + ".";
                 }
 
             //Torno il numero di parole specificato
@@ -547,28 +789,42 @@ namespace LT.RandomGen
                 {
                     if (resp != String.Empty)
                     {
-                        resp = resp + GetSeparator() + words[random.Next(0,words.Count-1)];
+                        var separator = GetSeparator();
+                        if (separator.Contains("."))
+                        {
+                            resp = resp + separator + WordsHelper.FirstCharToUpper(words[random.Next(0, words.Count - 1)].ToLower());
+                        }
+                        else
+                        {
+                            resp = resp + separator + words[random.Next(0, words.Count - 1)].ToLower();
+                        }
                     }
                     else
                     {
                         //primo passaggio, non metto il separatore
-                        resp = resp + words[random.Next(0, words.Count - 1)];
+                        resp = resp + words[random.Next(0, words.Count - 1)].ToLower();
                     }
                 }
-                return resp;
+                return resp + ".";
             }
             else
             {
                 string resp = String.Empty;
                 for (int i = 0; i < WordsNumber; i++)
                 {
-                    resp = resp + words[random.Next(0, words.Count - 1)] + " ";
+                    resp = resp + words[random.Next(0, words.Count - 1)].ToLower() + " ";
                 }
-                return resp;
+                return resp + ".";
             }
-
         }
 
+        /// <summary>
+        /// Generate a Number of Paragraphs
+        /// </summary>
+        /// <param name="Kind"></param>
+        /// <param name="ParagraphsNumber"></param>
+        /// <param name="Language"></param>
+        /// <returns></returns>
         public static string GenerateParagraphs(Kinds Kind, int ParagraphsNumber, Languages Language = Languages.English)
         {
             //Se il numero di paragrafi è minore di 1 torno vuoto
@@ -583,13 +839,13 @@ namespace LT.RandomGen
             {
                 if (resp != String.Empty)
                 {
-                    resp = resp + Environment.NewLine + Environment.NewLine + GenerateText(Kind, 
-                        random.Next(minWordsInParagraph, maxWordsInParagraph), Language);
+                    resp = resp + Environment.NewLine + Environment.NewLine + WordsHelper.FirstCharToUpper(GenerateText(Kind, 
+                        random.Next(minWordsInParagraph, maxWordsInParagraph), Language));
                 }
                 else
                 {
                     //primo passaggio, non metto il separatore
-                    resp = resp + GenerateText(Kind, random.Next(minWordsInParagraph, maxWordsInParagraph), Language);
+                    resp = resp + WordsHelper.FirstCharToUpper(GenerateText(Kind, random.Next(minWordsInParagraph, maxWordsInParagraph), Language)) + ".";
                 }
             }
             return resp;

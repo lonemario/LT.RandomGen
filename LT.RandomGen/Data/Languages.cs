@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace LT.RandomGen.Data
+﻿namespace LT.RandomGen.Data
 {
     public enum Languages
     {

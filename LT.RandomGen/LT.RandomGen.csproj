@@ -6,7 +6,7 @@
     <Company>LoneTech - www.mariorighi.com</Company>
     <Description>Library which helps to generate random string, datetime, int, email with many options.</Description>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-    <Version>1.0.2</Version>
+    <Version>1.1.0</Version>
     <PackageLicenseUrl>https://choosealicense.com/licenses/mit/</PackageLicenseUrl>
     <PackageProjectUrl>https://github.com/lonemario/LT.RandomGen</PackageProjectUrl>
   </PropertyGroup>

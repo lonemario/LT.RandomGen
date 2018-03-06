@@ -1,11 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace LT.RandomGen.Data
+﻿namespace LT.RandomGen.Data
 {
     public enum Kinds
     {
-        Animals, Foods
+        Actions, Animals, Foods, Jobs, Things, Tools
     }
 }
