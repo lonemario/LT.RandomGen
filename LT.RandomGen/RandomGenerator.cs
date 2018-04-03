@@ -742,7 +742,7 @@ namespace LT.RandomGen
         {
             //Se il numero di parole è negativo torno vuoto
             if (WordsNumber.HasValue)
-                if (WordsNumber.Value < 0)
+                if (WordsNumber.Value < 1)
                     return "";
 
             //Recupero le parole

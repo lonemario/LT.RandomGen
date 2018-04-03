@@ -8,7 +8,7 @@ namespace LT.RandomGen.TestConsole
         {
             for (int i = 0; i < 100; i++)
             {
-                Console.WriteLine(RandomGenerator.GenerateText(Data.Kinds.Things, 10,Data.Languages.Italian));
+                Console.WriteLine(i.ToString()+RandomGenerator.GenerateText(Data.Kinds.Things, 0,Data.Languages.Italian));
             }
             Console.ReadKey();
         }
