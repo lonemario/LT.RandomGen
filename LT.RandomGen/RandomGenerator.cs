@@ -774,12 +774,16 @@ namespace LT.RandomGen
                             resp = resp + word.ToLower();
                         }
                     }
-                    return resp + ".";
+                    return WordsHelper.FirstCharToUpper(resp).Trim();
                 }
                 else
                 {
-                    return string.Join(" ", words.ToArray()) + ".";
+                    return WordsHelper.FirstCharToUpper(string.Join(" ", words.ToArray())).Trim();
                 }
+
+            //torno solo 1 parola
+            if (WordsNumber == 1)
+                return WordsHelper.FirstCharToUpper(words[random.Next(0, words.Count - 1)].ToLower()).Trim();
 
             //Torno il numero di parole specificato
             if (UseSeparatorLogic)
@@ -805,7 +809,7 @@ namespace LT.RandomGen
                         resp = resp + words[random.Next(0, words.Count - 1)].ToLower();
                     }
                 }
-                return resp + ".";
+                return WordsHelper.FirstCharToUpper(resp).Trim();
             }
             else
             {
@@ -814,7 +818,7 @@ namespace LT.RandomGen
                 {
                     resp = resp + words[random.Next(0, words.Count - 1)].ToLower() + " ";
                 }
-                return resp + ".";
+                return WordsHelper.FirstCharToUpper(resp).Trim();
             }
         }
 
